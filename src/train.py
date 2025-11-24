@@ -40,7 +40,7 @@ def train_model():
     model = DisasterBiLSTM(vocab_size=tokenizer.vocab_size).to(device)
     
     # 5. Optimizer and Loss
-    optimizer = optim.Adam(model.parameters(), lr=LR, weight_decay=1e-5) # [cite: 50]
+    optimizer = optim.Adam(model.parameters(), lr=LR, weight_decay=1e-3) # [cite: 50]
     # Add a scheduler to lower learning rate when validation loss stops improving
     scheduler = optim.lr_scheduler.ReduceLROnPlateau(
         optimizer, mode='min', factor=0.5, patience=2, verbose=True
