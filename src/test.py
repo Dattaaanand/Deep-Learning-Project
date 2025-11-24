@@ -41,7 +41,7 @@ def predict():
         'id': df_test['id'],
         'target': predictions
     })
-    submission.to_csv('../prediction.csv', index=False)
+    submission.to_csv('../outputs/prediction.csv', index=False)
     print("Predictions saved to ../prediction.csv")
 
 if __name__ == "__main__":
