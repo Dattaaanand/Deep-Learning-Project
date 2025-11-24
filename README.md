@@ -8,3 +8,5 @@ If you have a GPU, then use `pip3 install torch torchvision torchaudio --index-u
 `pip install pandas`
 
 `pip install numpy`
+
+`pip install sklearn`
